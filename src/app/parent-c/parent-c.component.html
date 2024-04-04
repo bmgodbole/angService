@@ -1,0 +1,10 @@
+<p>parent-c works!</p>
+<p> value : {{cnt}}</p>
+<div class="parent">
+    <button class="ParentBtn" (click)="sendChoco()">
+        send Chocolates to child
+    </button>
+    <app-child-c [pchocCnt]="chocCount" (thnksEvent)="acceptThanks($event)"></app-child-c>
+     <p>Received from : {{thankMsg}}</p>
+     
+</div>

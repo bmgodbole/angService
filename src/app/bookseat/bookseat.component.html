@@ -1,0 +1,7 @@
+<p>bookseat works!</p>
+<div class="ba-seats">
+    
+<div class="ba-seats" *ngFor="let seat of seats; let i = index" (click) = "Bookme(seat)" [style.color]='red'>
+     {{seat}}
+</div>
+</div>
